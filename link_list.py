@@ -21,7 +21,7 @@ class LinkList:
             self.head = Node(item)
         else:
             position = self.head
-            while position is not None:
+            while position.next is not None:
                 position = position.next
             position = Node(item)
             self.length += 1
